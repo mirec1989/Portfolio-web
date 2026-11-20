@@ -1,5 +1,13 @@
 [
   {
+    "name": "bloky",
+    "title": "Bloky 8×8",
+    "description": "Ukladaj tvary na plochu a mazaj plné riadky a stĺpce. Nekonečný režim aj denná výzva.",
+    "kind": "hra",
+    "hidden": false,
+    "video": true
+  },
+  {
     "name": "sipky",
     "title": "Šípky: Únik",
     "description": "Ťukaj na šípky v správnom poradí, aby všetky vyleteli z plochy. 100 úrovní.",
