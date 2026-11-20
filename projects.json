@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "name": "sipky",
+    "title": "Šípky: Únik",
+    "description": "Ťukaj na šípky v správnom poradí, aby všetky vyleteli z plochy. 100 úrovní.",
+    "kind": "hra",
+    "hidden": false,
+    "video": true
+  }
+]
