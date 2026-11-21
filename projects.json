@@ -5,7 +5,15 @@
     "description": "Ukladaj tvary na plochu a mazaj plné riadky a stĺpce. Nekonečný režim aj denná výzva.",
     "kind": "hra",
     "hidden": false,
-    "video": true
+    "video": false
+  },
+  {
+    "name": "heic",
+    "title": "HEIC na JPG",
+    "description": "Prevod fotiek z iPhonu (HEIC) na JPG alebo PNG – dávkovo, bez nahrávania na server",
+    "kind": "nastroj",
+    "hidden": false,
+    "video": false
   },
   {
     "name": "mahjong",
@@ -13,7 +21,7 @@
     "description": "Odoberaj dvojice rovnakých voľných kameňov. 64 riešiteľných stavieb.",
     "kind": "hra",
     "hidden": false,
-    "video": true
+    "video": false
   },
   {
     "name": "pavuk",
@@ -21,7 +29,7 @@
     "description": "Klasický pavúčí solitaire s 1, 2 alebo 4 farbami. Overené rozdania, nápoveda, späť.",
     "kind": "hra",
     "hidden": false,
-    "video": true
+    "video": false
   },
   {
     "name": "sipky",
@@ -29,6 +37,6 @@
     "description": "Ťukaj na šípky v správnom poradí, aby všetky vyleteli z plochy. 100 úrovní.",
     "kind": "hra",
     "hidden": false,
-    "video": true
+    "video": false
   }
 ]
