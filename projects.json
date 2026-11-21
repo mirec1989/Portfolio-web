@@ -16,6 +16,14 @@
     "video": true
   },
   {
+    "name": "pavuk",
+    "title": "Pavúk solitaire",
+    "description": "Klasický pavúčí solitaire s 1, 2 alebo 4 farbami. Overené rozdania, nápoveda, späť.",
+    "kind": "hra",
+    "hidden": false,
+    "video": true
+  },
+  {
     "name": "sipky",
     "title": "Šípky: Únik",
     "description": "Ťukaj na šípky v správnom poradí, aby všetky vyleteli z plochy. 100 úrovní.",
