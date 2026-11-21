@@ -8,6 +8,14 @@
     "video": true
   },
   {
+    "name": "mahjong",
+    "title": "Mahjong: Páry",
+    "description": "Odoberaj dvojice rovnakých voľných kameňov. 64 riešiteľných stavieb.",
+    "kind": "hra",
+    "hidden": false,
+    "video": true
+  },
+  {
     "name": "sipky",
     "title": "Šípky: Únik",
     "description": "Ťukaj na šípky v správnom poradí, aby všetky vyleteli z plochy. 100 úrovní.",
