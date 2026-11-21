@@ -13,7 +13,7 @@
     "description": "Prevod fotiek z iPhonu (HEIC) na JPG alebo PNG – dávkovo, bez nahrávania na server",
     "kind": "nastroj",
     "hidden": false,
-    "video": true
+    "video": false
   },
   {
     "name": "kb",
@@ -21,7 +21,7 @@
     "description": "Zmenší fotku pod zadanú veľkosť v kB (napr. 100 kB pre formulár) – aj presne na bajt",
     "kind": "nastroj",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "mahjong",
@@ -44,6 +44,14 @@
     "title": "Šípky: Únik",
     "description": "Ťukaj na šípky v správnom poradí, aby všetky vyleteli z plochy. 100 úrovní.",
     "kind": "hra",
+    "hidden": false,
+    "video": false
+  },
+  {
+    "name": "webp",
+    "title": "WebP na PNG / JPG",
+    "description": "Prevod obrázkov WebP (aj AVIF) na PNG alebo JPG – dávkovo, bez nahrávania na server",
+    "kind": "nastroj",
     "hidden": false,
     "video": false
   }
