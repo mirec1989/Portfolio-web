@@ -1,6 +1,6 @@
 libheif-js 1.23.5 (libheif + libde265, LGPL-3.0)
 Súbory libheif.js a libheif.wasm sú nemenené súbory z balíka npm libheif-js 1.23.5.
-Zdrojový kód: https://github.com/catdad-experiments/libheif-js/tree/v1.23.5
+Zdrojový kód: https://github.com/catdad-experiments/libheif-js/tree/1.23.5
               https://www.npmjs.com/package/libheif-js/v/1.23.5
               https://github.com/strukturag/libheif
               https://github.com/strukturag/libde265
