@@ -13,6 +13,14 @@
     "description": "Prevod fotiek z iPhonu (HEIC) na JPG alebo PNG – dávkovo, bez nahrávania na server",
     "kind": "nastroj",
     "hidden": false,
+    "video": true
+  },
+  {
+    "name": "kb",
+    "title": "Obrázok na presné kB",
+    "description": "Zmenší fotku pod zadanú veľkosť v kB (napr. 100 kB pre formulár) – aj presne na bajt",
+    "kind": "nastroj",
+    "hidden": false,
     "video": false
   },
   {
