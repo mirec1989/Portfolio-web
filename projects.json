@@ -8,6 +8,14 @@
     "video": true
   },
   {
+    "name": "golf",
+    "title": "Golf solitaire",
+    "description": "Odkladaj karty o jedna vyššie alebo nižšie a vyčisti 7 stĺpcov. Každé rozdanie sa dá vyhrať, 9 jamiek s počítaním úderov.",
+    "kind": "hra",
+    "hidden": false,
+    "video": true
+  },
+  {
     "name": "heic",
     "title": "HEIC na JPG",
     "description": "Prevod fotiek z iPhonu (HEIC) na JPG alebo PNG – dávkovo, bez nahrávania na server",
@@ -20,6 +28,14 @@
     "title": "Obrázok na presné kB",
     "description": "Zmenší fotku pod zadanú veľkosť v kB (napr. 100 kB pre formulár) – aj presne na bajt",
     "kind": "nastroj",
+    "hidden": false,
+    "video": true
+  },
+  {
+    "name": "klondike",
+    "title": "Klondike solitaire",
+    "description": "Klasický solitaire (pasians) – ťahanie po 1 alebo po 3 kartách, overené rozdania, nápoveda, automatické dokončenie.",
+    "kind": "hra",
     "hidden": false,
     "video": true
   },
