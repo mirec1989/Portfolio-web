@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Licencie a poďakovanie – Hry a nástroje</title>
+<meta name="description" content="Knižnice tretích strán použité v hrách a nástrojoch a ich licencie.">
+<style>
+  :root { --bg: #f6f7fb; --fg: #1d2330; --muted: #5b6475; --card: #fff; --accent: #3b6cf6; --line: #e3e6ee; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #11141b; --fg: #e8ebf2; --muted: #a0a8b8; --card: #1a1f2a; --accent: #7b9cff; --line: #2a3140; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--fg); line-height: 1.5; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.7rem; margin: 0 0 8px; }
+  a { color: var(--accent); overflow-wrap: anywhere; }
+  .lead { color: var(--muted); }
+  .lib { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; margin: 12px 0; }
+  .lib h2 { font-size: 1.05rem; margin: 0 0 6px; }
+  .lib p { margin: 4px 0; font-size: .92rem; }
+  .ver { color: var(--muted); font-weight: 400; }
+  .lic { font-size: .78rem; font-weight: 600; border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; margin-left: 4px; white-space: nowrap; }
+  .note { color: var(--muted); }
+  pre { white-space: pre-wrap; font-size: .75rem; max-height: 360px; overflow: auto; background: var(--bg); padding: 10px; border-radius: 8px; }
+  summary { cursor: pointer; font-size: .9rem; color: var(--accent); margin-top: 6px; }
+  footer { margin-top: 32px; color: var(--muted); font-size: .85rem; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="../">← Hry a nástroje</a></p>
+  <h1>Licencie a poďakovanie</h1>
+  <p class="lead">Vlastný kód hier a nástrojov je náš. Niektoré nástroje používajú voľne šíriteľné knižnice tretích strán – ďakujeme ich autorom. Zoznam vzniká automaticky z produkčných závislostí pri každom zostavení.</p>
+  
+    <section class="lib" id="pdf-lib-standard-fonts" data-lib="@pdf-lib/standard-fonts">
+      <h2>@pdf-lib/standard-fonts <span class="ver">1.0.0</span> <span class="lic">MIT</span></h2>
+      <p>Autor: Andrew Dillon &lt;andrew.dillon.j@gmail.com&gt;</p>
+      <p>Použité v: <a href="../pdf/">Spojiť a zmenšiť PDF</a></p>
+      
+      <p>Zdrojový kód: <a href="https://github.com/Hopding/standard-fonts">https://github.com/Hopding/standard-fonts</a>
+        · <a href="https://www.npmjs.com/package/@pdf-lib/standard-fonts/v/1.0.0">npm</a></p>
+      <details><summary>Plné znenie licencie</summary><pre>MIT License
+
+Copyright (c) 2018 Andrew Dillon
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre></details>
+    </section>
+    <section class="lib" id="pdf-lib-upng" data-lib="@pdf-lib/upng">
+      <h2>@pdf-lib/upng <span class="ver">1.0.1</span> <span class="lic">MIT</span></h2>
+      <p>Autor: photopea (https://github.com/photopea)</p>
+      <p>Použité v: <a href="../pdf/">Spojiť a zmenšiť PDF</a></p>
+      
+      <p>Zdrojový kód: <a href="https://github.com/Hopding/upng">https://github.com/Hopding/upng</a>
+        · <a href="https://www.npmjs.com/package/@pdf-lib/upng/v/1.0.1">npm</a></p>
+      <details><summary>Plné znenie licencie</summary><pre>MIT License
+
+Copyright (c) 2017 Photopea
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre></details>
+    </section>
+    <section class="lib" id="libheif-js" data-lib="libheif-js">
+      <h2>libheif-js <span class="ver">1.23.5</span> <span class="lic">LGPL-3.0</span></h2>
+      <p>Autor: Kiril Vatev &lt;vatev.1@gmail.com&gt;</p>
+      <p>Použité v: <a href="../heic/">HEIC na JPG</a></p>
+      <p class="note">Obsahuje knižnice libheif 1.23.5 (<a href="https://github.com/strukturag/libheif">https://github.com/strukturag/libheif</a>) a dekodér HEVC libde265 (<a href="https://github.com/strukturag/libde265">https://github.com/strukturag/libde265</a>), obe pod GNU LGPL 3.0, skompilované do WebAssembly. Súbory libheif.js a libheif.wasm sú na stránke nemenené a samostatné (priečinok heic/libheif/) – môžete ich nahradiť vlastnou zostavou. Zdrojový kód tejto verzie: <a href="https://github.com/catdad-experiments/libheif-js/tree/v1.23.5">https://github.com/catdad-experiments/libheif-js/tree/v1.23.5</a></p>
+      <p>Zdrojový kód: <a href="https://github.com/catdad-experiments/libheif-js">https://github.com/catdad-experiments/libheif-js</a> · <a href="https://github.com/catdad-experiments/libheif-js#readme">domovská stránka</a>
+        · <a href="https://www.npmjs.com/package/libheif-js/v/1.23.5">npm</a></p>
+      <details><summary>Plné znenie licencie</summary><pre>GNU LESSER GENERAL PUBLIC LICENSE
+                       Version 3, 29 June 2007
+
+ Copyright (C) 2007 Free Software Foundation, Inc. &lt;https://fsf.org/&gt;
+ Everyone is permitted to copy and distribute verbatim copies
+ of this license document, but changing it is not allowed.
+
+
+  This version of the GNU Lesser General Public License incorporates
+the terms and conditions of version 3 of the GNU General Public
+License, supplemented by the additional permissions listed below.
+
+  0. Additional Definitions.
+
+  As used herein, &quot;this License&quot; refers to version 3 of the GNU Lesser
+General Public License, and the &quot;GNU GPL&quot; refers to version 3 of the GNU
+General Public License.
+
+  &quot;The Library&quot; refers to a covered work governed by this License,
+other than an Application or a Combined Work as defined below.
+
+  An &quot;Application&quot; is any work that makes use of an interface provided
+by the Library, but which is not otherwise based on the Library.
+Defining a subclass of a class defined by the Library is deemed a mode
+of using an interface provided by the Library.
+
+  A &quot;Combined Work&quot; is a work produced by combining or linking an
+Application with the Library.  The particular version of the Library
+with which the Combined Work was made is also called the &quot;Linked
+Version&quot;.
+
+  The &quot;Minimal Corresponding Source&quot; for a Combined Work means the
+Corresponding Source for the Combined Work, excluding any source code
+for portions of the Combined Work that, considered in isolation, are
+based on the Application, and not on the Linked Version.
+
+  The &quot;Corresponding Application Code&quot; for a Combined Work means the
+object code and/or source code for the Application, including any data
+and utility programs needed for reproducing the Combined Work from the
+Application, but excluding the System Libraries of the Combined Work.
+
+  1. Exception to Section 3 of the GNU GPL.
+
+  You may convey a covered work under sections 3 and 4 of this License
+without being bound by section 3 of the GNU GPL.
+
+  2. Conveying Modified Versions.
+
+  If you modify a copy of the Library, and, in your modifications, a
+facility refers to a function or data to be supplied by an Application
+that uses the facility (other than as an argument passed when the
+facility is invoked), then you may convey a copy of the modified
+version:
+
+   a) under this License, provided that you make a good faith effort to
+   ensure that, in the event an Application does not supply the
+   function or data, the facility still operates, and performs
+   whatever part of its purpose remains meaningful, or
+
+   b) under the GNU GPL, with none of the additional permissions of
+   this License applicable to that copy.
+
+  3. Object Code Incorporating Material from Library Header Files.
+
+  The object code form of an Application may incorporate material from
+a header file that is part of the Library.  You may convey such object
+code under terms of your choice, provided that, if the incorporated
+material is not limited to numerical parameters, data structure
+layouts and accessors, or small macros, inline functions and templates
+(ten or fewer lines in length), you do both of the following:
+
+   a) Give prominent notice with each copy of the object code that the
+   Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the object code with a copy of the GNU GPL and this license
+   document.
+
+  4. Combined Works.
+
+  You may convey a Combined Work under terms of your choice that,
+taken together, effectively do not restrict modification of the
+portions of the Library contained in the Combined Work and reverse
+engineering for debugging such modifications, if you also do each of
+the following:
+
+   a) Give prominent notice with each copy of the Combined Work that
+   the Library is used in it and that the Library and its use are
+   covered by this License.
+
+   b) Accompany the Combined Work with a copy of the GNU GPL and this license
+   document.
+
+   c) For a Combined Work that displays copyright notices during
+   execution, include the copyright notice for the Library among
+   these notices, as well as a reference directing the user to the
+   copies of the GNU GPL and this license document.
+
+   d) Do one of the following:
+
+       0) Convey the Minimal Corresponding Source under the terms of this
+       License, and the Corresponding Application Code in a form
+       suitable for, and under terms that permit, the user to
+       recombine or relink the Application with a modified version of
+       the Linked Version to produce a modified Combined Work, in the
+       manner specified by section 6 of the GNU GPL for conveying
+       Corresponding Source.
+
+       1) Use a suitable shared library mechanism for linking with the
+       Library.  A suitable mechanism is one that (a) uses at run time
+       a copy of the Library already present on the user&#39;s computer
+       system, and (b) will operate properly with a modified version
+       of the Library that is interface-compatible with the Linked
+       Version.
+
+   e) Provide Installation Information, but only if you would otherwise
+   be required to provide such information under section 6 of the
+   GNU GPL, and only to the extent that such information is
+   necessary to install and execute a modified version of the
+   Combined Work produced by recombining or relinking the
+   Application with a modified version of the Linked Version. (If
+   you use option 4d0, the Installation Information must accompany
+   the Minimal Corresponding Source and Corresponding Application
+   Code. If you use option 4d1, you must provide the Installation
+   Information in the manner specified by section 6 of the GNU GPL
+   for conveying Corresponding Source.)
+
+  5. Combined Libraries.
+
+  You may place library facilities that are a work based on the
+Library side by side in a single library together with other library
+facilities that are not Applications and are not covered by this
+License, and convey such a combined library under terms of your
+choice, if you do both of the following:
+
+   a) Accompany the combined library with a copy of the same work based
+   on the Library, uncombined with any other library facilities,
+   conveyed under the terms of this License.
+
+   b) Give prominent notice with the combined library that part of it
+   is a work based on the Library, and explaining where to find the
+   accompanying uncombined form of the same work.
+
+  6. Revised Versions of the GNU Lesser General Public License.
+
+  The Free Software Foundation may publish revised and/or new versions
+of the GNU Lesser General Public License from time to time. Such new
+versions will be similar in spirit to the present version, but may
+differ in detail to address new problems or concerns.
+
+  Each version is given a distinguishing version number. If the
+Library as you received it specifies that a certain numbered version
+of the GNU Lesser General Public License &quot;or any later version&quot;
+applies to it, you have the option of following the terms and
+conditions either of that published version or of any later version
+published by the Free Software Foundation. If the Library as you
+received it does not specify a version number of the GNU Lesser
+General Public License, you may choose any version of the GNU Lesser
+General Public License ever published by the Free Software Foundation.
+
+  If the Library as you received it specifies that a proxy can decide
+whether future versions of the GNU Lesser General Public License shall
+apply, that proxy&#39;s public statement of acceptance of any version is
+permanent authorization for you to choose that version for the
+Library.</pre></details>
+    </section>
+    <section class="lib" id="pako" data-lib="pako">
+      <h2>pako <span class="ver">1.0.11</span> <span class="lic">(MIT AND Zlib)</span></h2>
+      
+      <p>Použité v: <a href="../pdf/">Spojiť a zmenšiť PDF</a></p>
+      
+      <p>Zdrojový kód: <a href="https://github.com/nodeca/pako">https://github.com/nodeca/pako</a>
+        · <a href="https://www.npmjs.com/package/pako/v/1.0.11">npm</a></p>
+      <details><summary>Plné znenie licencie</summary><pre>(The MIT License)
+
+Copyright (C) 2014-2017 by Vitaly Puzrin and Andrei Tuputcyn
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.</pre></details>
+    </section>
+    <section class="lib" id="pdf-lib" data-lib="pdf-lib">
+      <h2>pdf-lib <span class="ver">1.17.1</span> <span class="lic">MIT</span></h2>
+      <p>Autor: Andrew Dillon &lt;andrew.dillon.j@gmail.com&gt;</p>
+      <p>Použité v: <a href="../pdf/">Spojiť a zmenšiť PDF</a></p>
+      
+      <p>Zdrojový kód: <a href="https://github.com/Hopding/pdf-lib">https://github.com/Hopding/pdf-lib</a> · <a href="https://pdf-lib.js.org">domovská stránka</a>
+        · <a href="https://www.npmjs.com/package/pdf-lib/v/1.17.1">npm</a></p>
+      <details><summary>Plné znenie licencie</summary><pre>MIT License
+
+Copyright (c) 2019 Andrew Dillon
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</pre></details>
+    </section>
+    <section class="lib" id="tslib" data-lib="tslib">
+      <h2>tslib <span class="ver">1.14.1</span> <span class="lic">0BSD</span></h2>
+      <p>Autor: Microsoft Corp.</p>
+      <p>Použité v: <a href="../pdf/">Spojiť a zmenšiť PDF</a></p>
+      
+      <p>Zdrojový kód: <a href="https://github.com/Microsoft/tslib">https://github.com/Microsoft/tslib</a> · <a href="https://www.typescriptlang.org/">domovská stránka</a>
+        · <a href="https://www.npmjs.com/package/tslib/v/1.14.1">npm</a></p>
+      <details><summary>Plné znenie licencie</summary><pre>Copyright (c) Microsoft Corporation.
+
+Permission to use, copy, modify, and/or distribute this software for any
+purpose with or without fee is hereby granted.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.</pre></details>
+    </section>
+  <section class="lib" id="nastroje">
+    <h2>Nástroje na zostavenie</h2>
+    <p>Stránky sú zostavené pomocou <a href="https://vite.dev/">Vite</a> (MIT) a <a href="https://www.typescriptlang.org/">TypeScript</a> (Apache-2.0); do stránok sa z nich dostáva len nepatrný pomocný kód. Grafika hier je kreslená kódom, písma sú systémové a zvuky generuje prehliadač.</p>
+  </section>
+  <footer>Počet knižníc: 6</footer>
+</main>
+</body>
+</html>
