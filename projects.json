@@ -5,7 +5,7 @@
     "description": "Ukladaj tvary na plochu a mazaj plné riadky a stĺpce. Nekonečný režim aj denná výzva.",
     "kind": "hra",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "golf",
@@ -13,7 +13,7 @@
     "description": "Odkladaj karty o jedna vyššie alebo nižšie a vyčisti 7 stĺpcov. Každé rozdanie sa dá vyhrať, 9 jamiek s počítaním úderov.",
     "kind": "hra",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "heic",
@@ -21,7 +21,7 @@
     "description": "Prevod fotiek z iPhonu (HEIC) na JPG alebo PNG – dávkovo, bez nahrávania na server",
     "kind": "nastroj",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "kb",
@@ -29,7 +29,7 @@
     "description": "Zmenší fotku pod zadanú veľkosť v kB (napr. 100 kB pre formulár) – aj presne na bajt",
     "kind": "nastroj",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "klondike",
@@ -37,7 +37,7 @@
     "description": "Klasický solitaire (pasians) – ťahanie po 1 alebo po 3 kartách, overené rozdania, nápoveda, automatické dokončenie.",
     "kind": "hra",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "mahjong",
@@ -45,7 +45,7 @@
     "description": "Odoberaj dvojice rovnakých voľných kameňov. 64 riešiteľných stavieb.",
     "kind": "hra",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "pavuk",
@@ -53,7 +53,7 @@
     "description": "Klasický pavúčí solitaire s 1, 2 alebo 4 farbami. Overené rozdania, nápoveda, späť.",
     "kind": "hra",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "pdf",
@@ -61,7 +61,7 @@
     "description": "Spojenie viacerých PDF (aj fotiek) do jedného a zmenšenie veľkosti – bez nahrávania na server",
     "kind": "nastroj",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "sipky",
@@ -69,7 +69,7 @@
     "description": "Ťukaj na šípky v správnom poradí, aby všetky vyleteli z plochy. 100 úrovní.",
     "kind": "hra",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "skrutky",
@@ -77,7 +77,7 @@
     "description": "Trieď farebné matice na skrutky, kým každá skrutka nemá jednu farbu. Skryté matice, 100 úrovní.",
     "kind": "hra",
     "hidden": false,
-    "video": false
+    "video": true
   },
   {
     "name": "webp",
@@ -85,6 +85,6 @@
     "description": "Prevod obrázkov WebP (aj AVIF) na PNG alebo JPG – dávkovo, bez nahrávania na server",
     "kind": "nastroj",
     "hidden": false,
-    "video": false
+    "video": true
   }
 ]
