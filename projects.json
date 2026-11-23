@@ -50,7 +50,7 @@
   {
     "name": "pavuk",
     "title": "Pavúk solitaire",
-    "description": "Klasický pavúčí solitaire s 1, 2 alebo 4 farbami. Overené rozdania, nápoveda, späť.",
+    "description": "Pavúčí solitaire s obrími, konečne čitateľnými kartami. Tréning mozgu: séria dní, čas a zlepšenie. Bez časovača, 1, 2 alebo 4 farby.",
     "kind": "hra",
     "hidden": false,
     "video": true
