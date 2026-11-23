@@ -74,7 +74,7 @@
   {
     "name": "skrutky",
     "title": "Skrutky a matice",
-    "description": "Trieď farebné matice na skrutky, kým každá skrutka nemá jednu farbu. Skryté matice, 100 úrovní.",
+    "description": "Oprav rozbitého robota: trieď farebné matice na skrutky a za každú úroveň mu vráť jeden diel. 100 úrovní.",
     "kind": "hra",
     "hidden": false,
     "video": true
