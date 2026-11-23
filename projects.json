@@ -10,7 +10,7 @@
   {
     "name": "golf",
     "title": "Golf solitaire",
-    "description": "Odkladaj karty o jedna vyššie alebo nižšie a vyčisti 7 stĺpcov. Každé rozdanie sa dá vyhrať, 9 jamiek s počítaním úderov.",
+    "description": "9 kreslených jamiek: každá odložená karta posunie loptičku k jamke. Scorecard pod/nad par, birdie, eagle aj hole in one. Každé rozdanie sa dá vyhrať.",
     "kind": "hra",
     "hidden": false,
     "video": true
