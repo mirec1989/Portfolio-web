@@ -2,7 +2,7 @@
   {
     "name": "bloky",
     "title": "Bloky 8×8",
-    "description": "Ukladaj tvary na plochu a mazaj plné riadky a stĺpce. Nekonečný režim aj denná výzva.",
+    "description": "Neónové bloky, ktoré sa tríštia ako sklo. Mazaj viac čiar naraz, naťahuj COMBO a prekonaj rekord. Vidíš aj 3 ďalšie tvary.",
     "kind": "hra",
     "hidden": false,
     "video": true
