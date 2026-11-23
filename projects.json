@@ -34,7 +34,7 @@
   {
     "name": "klondike",
     "title": "Klondike solitaire",
-    "description": "Klasický solitaire (pasians) – ťahanie po 1 alebo po 3 kartách, overené rozdania, nápoveda, automatické dokončenie.",
+    "description": "Pasians s dennou výzvou (rovnaké rozdanie pre všetkých), odomykateľnými balíčkami kariet (mačky, staré mapy, vesmír) a ohňostrojom z kariet pri výhre.",
     "kind": "hra",
     "hidden": false,
     "video": true
