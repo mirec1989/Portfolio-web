@@ -42,7 +42,7 @@
   {
     "name": "mahjong",
     "title": "Mahjong: Páry",
-    "description": "Odoberaj dvojice rovnakých voľných kameňov. 64 riešiteľných stavieb.",
+    "description": "Cesta okolo sveta: odoberajte páry kameňov a zbierajte kreslené pohľadnice zo 16 miest. Bez časovača, veľké kamene.",
     "kind": "hra",
     "hidden": false,
     "video": true
