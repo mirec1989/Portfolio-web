@@ -5,77 +5,126 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hry a nástroje</title>
 <meta name="description" content="Malé hry a nástroje, ktoré fungujú priamo v prehliadači – bez inštalácie a bez registrácie.">
+<meta name="theme-color" content="#151a2b">
 <style>
-  :root { --bg: #f6f7fb; --fg: #1d2330; --muted: #5b6475; --card: #fff; --accent: #3b6cf6; --line: #e3e6ee; }
-  @media (prefers-color-scheme: dark) { :root { --bg: #11141b; --fg: #e8ebf2; --muted: #a0a8b8; --card: #1a1f2a; --accent: #7b9cff; --line: #2a3140; } }
+  :root { --bg: #151a2b; --fg: #f4f1ea; --muted: #b9bfd0; --card: #20273c; --line: #333d5a; --accent: #ffd23f; }
   * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--fg); }
-  main { max-width: 960px; margin: 0 auto; padding: 32px 16px 64px; }
-  h1 { font-size: 1.8rem; margin: 0 0 4px; }
-  .lead { color: var(--muted); margin: 0 0 24px; }
-  h2 { font-size: 1.1rem; margin: 28px 0 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-  .grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; position: relative; }
-  .card > a:first-child { display: block; padding: 16px; color: inherit; text-decoration: none; min-height: 100%; }
-  .card:hover { border-color: var(--accent); }
-  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
-  .card p { margin: 0; color: var(--muted); font-size: .92rem; }
-  .video { position: absolute; top: 12px; right: 12px; font-size: .8rem; color: var(--accent); }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .card { transition: none !important; } }
+  body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: var(--bg); color: var(--fg);
+    background-image: radial-gradient(circle at 15% -10%, #2c3a6b 0, transparent 45%), radial-gradient(circle at 100% 0, #3a2350 0, transparent 40%); background-repeat: no-repeat; }
+  main { max-width: 1080px; margin: 0 auto; padding: 20px 16px 64px; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; margin-bottom: 12px; }
+  h1 { font-size: 1.6rem; margin: 0; letter-spacing: -.01em; }
+  .lead { color: var(--muted); margin: 0; font-size: .95rem; }
+  nav { display: flex; gap: 8px; overflow-x: auto; padding: 4px 0 8px; scrollbar-width: none; }
+  .chip { flex: none; display: inline-flex; align-items: center; min-height: 44px; padding: 0 13px; border-radius: 999px; background: var(--card);
+    border: 1px solid var(--line); color: var(--fg); text-decoration: none; font-weight: 600; font-size: .95rem; }
+  .chip:hover, .chip:focus-visible { border-color: var(--accent); }
+  .aud { margin-top: 22px; scroll-margin-top: 12px; }
+  h2 { font-size: 1.25rem; margin: 0 0 2px; }
+  .sub { color: var(--muted); margin: 0 0 12px; font-size: .95rem; }
+  .grid { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
+  @media (max-width: 520px) { .grid { grid-template-columns: 1fr 1fr; gap: 10px; } }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; position: relative; overflow: hidden; transition: transform .15s, border-color .15s; }
+  .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+  .main { display: block; color: inherit; text-decoration: none; height: 100%; }
+  .main:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; border-radius: 18px; }
+  .card img, .noimg { display: block; width: 100%; height: auto; aspect-ratio: 1; background: #2a3350; }
+  .noimg { display: grid; place-items: center; font-size: 3rem; font-weight: 800; color: var(--muted); }
+  .txt { display: block; padding: 10px 12px 14px; }
+  .kind { display: inline-block; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; color: var(--accent); font-weight: 700; }
+  .card h3 { margin: 2px 0 4px; font-size: 1.05rem; line-height: 1.25; }
+  .card p { margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .video { position: absolute; top: 8px; right: 8px; width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%;
+    background: rgba(10, 14, 26, .78); color: #fff; text-decoration: none; font-size: 1rem; border: 2px solid rgba(255,255,255,.7); }
+  .video:hover, .video:focus-visible { background: #000; border-color: var(--accent); }
+  /* Pokojné hry (45+): väčší text, vysoký kontrast, žiadny pohyb. */
+  .aud-senior .card { transition: none; }
+  .aud-senior .card:hover { transform: none; }
+  .aud-senior h3 { font-size: 1.2rem; }
+  .aud-senior .card p { font-size: 1.125rem; color: #e4e7ef; display: block; -webkit-line-clamp: unset; overflow: visible; }
+  @media (max-width: 520px) { .aud-senior .grid { grid-template-columns: 1fr; } .aud-senior .main { display: grid; grid-template-columns: 40% 1fr; align-items: start; } }
+  .aud-senior .sub { font-size: 1.125rem; color: #e4e7ef; }
+  /* Nástroje: istota – dôraz na zámok. */
+  .aud-tool .sub { color: #8ff0bf; font-weight: 600; }
   .empty { color: var(--muted); }
-  footer { margin-top: 40px; color: var(--muted); font-size: .85rem; }
+  footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
   footer a { color: var(--accent); }
+  @media (max-width: 520px) { h1 { font-size: 1.35rem; } .lead { font-size: .88rem; } .chip { font-size: .88rem; } .aud { margin-top: 16px; } }
 </style>
 </head>
 <body>
 <main>
-  <h1>Hry a nástroje</h1>
-  <p class="lead">Fungujú priamo v prehliadači, na mobile aj na počítači. Nič sa neinštaluje a vaše súbory neopúšťajú zariadenie.</p>
-  <section><h2>Hry</h2><ul class="grid">
-      <li class="card" data-project="bloky">
-        <a href="./bloky/"><h3>Bloky 8×8</h3><p>Neónové bloky, ktoré sa tríštia ako sklo. Mazaj viac čiar naraz, naťahuj COMBO a prekonaj rekord. Vidíš aj 3 ďalšie tvary.</p></a>
-        <a class="video" href="./videos/bloky.mp4">▶ video</a>
+  <header>
+    <h1>Hry a nástroje</h1>
+    <p class="lead">Priamo v prehliadači, bez inštalácie a registrácie.</p>
+  </header>
+  <nav aria-label="Pre koho"><a class="chip" href="#genz">⚡ Rýchle</a><a class="chip" href="#mid">☕ Na chvíľku</a><a class="chip" href="#senior">🌿 Pokojné</a><a class="chip" href="#tool">🔒 Nástroje</a></nav>
+  
+  <section id="genz" class="aud aud-genz" data-audience="genz">
+    <h2>Rýchle a výbušné</h2><p class="sub">Krátke kolá, otrasy, combo a postavičky, ktoré reagujú na každý ťah.</p>
+    <ul class="grid">
+      <li class="card" data-project="bloky" data-kind="hra">
+        <a class="main" href="./bloky/"><img src="./covers/bloky-256.png" srcset="./covers/bloky-256.png 1x, ./covers/bloky-512.png 2x" width="256" height="256" alt="" loading="eager" decoding="async"><span class="txt"><span class="kind">Hra</span><h3>Bloky 8×8</h3><p>Neónové bloky, ktoré sa tríštia ako sklo. Mazaj viac čiar naraz, naťahuj COMBO a prekonaj rekord. Vidíš aj 3 ďalšie tvary.</p></span></a>
+        <a class="video" href="./videos/bloky.mp4" aria-label="Video: Bloky 8×8">▶</a>
       </li>
-      <li class="card" data-project="golf">
-        <a href="./golf/"><h3>Golf solitaire</h3><p>9 kreslených jamiek: každá odložená karta posunie loptičku k jamke. Scorecard pod/nad par, birdie, eagle aj hole in one. Každé rozdanie sa dá vyhrať.</p></a>
-        <a class="video" href="./videos/golf.mp4">▶ video</a>
+      <li class="card" data-project="sipky" data-kind="hra">
+        <a class="main" href="./sipky/"><img src="./covers/sipky-256.png" srcset="./covers/sipky-256.png 1x, ./covers/sipky-512.png 2x" width="256" height="256" alt="" loading="eager" decoding="async"><span class="txt"><span class="kind">Hra</span><h3>Šípky: Únik</h3><p>Pip je zavretý medzi šípkami. Ťukaj na ne v správnom poradí a pomôž mu utiecť. 100 úrovní.</p></span></a>
+        <a class="video" href="./videos/sipky.mp4" aria-label="Video: Šípky: Únik">▶</a>
+      </li></ul>
+  </section>
+
+  <section id="mid" class="aud aud-mid" data-audience="mid">
+    <h2>Na chvíľku s kávou</h2><p class="sub">Uspokojivé cvaknutie, kolo na pár minút a niečo, čo sa postupne skladá.</p>
+    <ul class="grid">
+      <li class="card" data-project="golf" data-kind="hra">
+        <a class="main" href="./golf/"><img src="./covers/golf-256.png" srcset="./covers/golf-256.png 1x, ./covers/golf-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Hra</span><h3>Golf solitaire</h3><p>9 kreslených jamiek: každá odložená karta posunie loptičku k jamke. Scorecard pod/nad par, birdie, eagle aj hole in one. Každé rozdanie sa dá vyhrať.</p></span></a>
+        <a class="video" href="./videos/golf.mp4" aria-label="Video: Golf solitaire">▶</a>
       </li>
-      <li class="card" data-project="klondike">
-        <a href="./klondike/"><h3>Klondike solitaire</h3><p>Pasians s dennou výzvou (rovnaké rozdanie pre všetkých), odomykateľnými balíčkami kariet (mačky, staré mapy, vesmír) a ohňostrojom z kariet pri výhre.</p></a>
-        <a class="video" href="./videos/klondike.mp4">▶ video</a>
+      <li class="card" data-project="klondike" data-kind="hra">
+        <a class="main" href="./klondike/"><img src="./covers/klondike-256.png" srcset="./covers/klondike-256.png 1x, ./covers/klondike-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Hra</span><h3>Klondike solitaire</h3><p>Pasians s dennou výzvou (rovnaké rozdanie pre všetkých), odomykateľnými balíčkami kariet (mačky, staré mapy, vesmír) a ohňostrojom z kariet pri výhre.</p></span></a>
+        <a class="video" href="./videos/klondike.mp4" aria-label="Video: Klondike solitaire">▶</a>
       </li>
-      <li class="card" data-project="mahjong">
-        <a href="./mahjong/"><h3>Mahjong: Páry</h3><p>Cesta okolo sveta: odoberajte páry kameňov a zbierajte kreslené pohľadnice zo 16 miest. Bez časovača, veľké kamene.</p></a>
-        <a class="video" href="./videos/mahjong.mp4">▶ video</a>
+      <li class="card" data-project="skrutky" data-kind="hra">
+        <a class="main" href="./skrutky/"><img src="./covers/skrutky-256.png" srcset="./covers/skrutky-256.png 1x, ./covers/skrutky-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Hra</span><h3>Skrutky a matice</h3><p>Oprav rozbitého robota: trieď farebné matice na skrutky a za každú úroveň mu vráť jeden diel. 100 úrovní.</p></span></a>
+        <a class="video" href="./videos/skrutky.mp4" aria-label="Video: Skrutky a matice">▶</a>
+      </li></ul>
+  </section>
+
+  <section id="senior" class="aud aud-senior" data-audience="senior">
+    <h2>Pokojné a čitateľné</h2><p class="sub">Veľké karty a kamene, bez časovača, späť aj nápoveda vždy po ruke.</p>
+    <ul class="grid">
+      <li class="card" data-project="mahjong" data-kind="hra">
+        <a class="main" href="./mahjong/"><img src="./covers/mahjong-256.png" srcset="./covers/mahjong-256.png 1x, ./covers/mahjong-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Hra</span><h3>Mahjong: Páry</h3><p>Cesta okolo sveta: odoberajte páry kameňov a zbierajte kreslené pohľadnice zo 16 miest. Bez časovača, veľké kamene.</p></span></a>
+        <a class="video" href="./videos/mahjong.mp4" aria-label="Video: Mahjong: Páry">▶</a>
       </li>
-      <li class="card" data-project="pavuk">
-        <a href="./pavuk/"><h3>Pavúk solitaire</h3><p>Pavúčí solitaire s obrími, konečne čitateľnými kartami. Tréning mozgu: séria dní, čas a zlepšenie. Bez časovača, 1, 2 alebo 4 farby.</p></a>
-        <a class="video" href="./videos/pavuk.mp4">▶ video</a>
+      <li class="card" data-project="pavuk" data-kind="hra">
+        <a class="main" href="./pavuk/"><img src="./covers/pavuk-256.png" srcset="./covers/pavuk-256.png 1x, ./covers/pavuk-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Hra</span><h3>Pavúk solitaire</h3><p>Pavúčí solitaire s obrími, konečne čitateľnými kartami. Tréning mozgu: séria dní, čas a zlepšenie. Bez časovača, 1, 2 alebo 4 farby.</p></span></a>
+        <a class="video" href="./videos/pavuk.mp4" aria-label="Video: Pavúk solitaire">▶</a>
+      </li></ul>
+  </section>
+
+  <section id="tool" class="aud aud-tool" data-audience="tool">
+    <h2>Rýchle nástroje na súbory</h2><p class="sub">Výsledok za pár sekúnd. Súbory neopúšťajú vaše zariadenie.</p>
+    <ul class="grid">
+      <li class="card" data-project="heic" data-kind="nastroj">
+        <a class="main" href="./heic/"><img src="./covers/heic-256.png" srcset="./covers/heic-256.png 1x, ./covers/heic-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Nástroj</span><h3>HEIC na JPG</h3><p>Prevod fotiek z iPhonu (HEIC) na JPG alebo PNG – dávkovo, bez nahrávania na server</p></span></a>
+        <a class="video" href="./videos/heic.mp4" aria-label="Video: HEIC na JPG">▶</a>
       </li>
-      <li class="card" data-project="sipky">
-        <a href="./sipky/"><h3>Šípky: Únik</h3><p>Pip je zavretý medzi šípkami. Ťukaj na ne v správnom poradí a pomôž mu utiecť. 100 úrovní.</p></a>
-        <a class="video" href="./videos/sipky.mp4">▶ video</a>
+      <li class="card" data-project="kb" data-kind="nastroj">
+        <a class="main" href="./kb/"><img src="./covers/kb-256.png" srcset="./covers/kb-256.png 1x, ./covers/kb-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Nástroj</span><h3>Obrázok na presné kB</h3><p>Zmenší fotku pod zadanú veľkosť v kB (napr. 100 kB pre formulár) – aj presne na bajt</p></span></a>
+        <a class="video" href="./videos/kb.mp4" aria-label="Video: Obrázok na presné kB">▶</a>
       </li>
-      <li class="card" data-project="skrutky">
-        <a href="./skrutky/"><h3>Skrutky a matice</h3><p>Oprav rozbitého robota: trieď farebné matice na skrutky a za každú úroveň mu vráť jeden diel. 100 úrovní.</p></a>
-        <a class="video" href="./videos/skrutky.mp4">▶ video</a>
-      </li></ul></section>
-<section><h2>Nástroje</h2><ul class="grid">
-      <li class="card" data-project="heic">
-        <a href="./heic/"><h3>HEIC na JPG</h3><p>Prevod fotiek z iPhonu (HEIC) na JPG alebo PNG – dávkovo, bez nahrávania na server</p></a>
-        <a class="video" href="./videos/heic.mp4">▶ video</a>
+      <li class="card" data-project="pdf" data-kind="nastroj">
+        <a class="main" href="./pdf/"><img src="./covers/pdf-256.png" srcset="./covers/pdf-256.png 1x, ./covers/pdf-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Nástroj</span><h3>Spojiť a zmenšiť PDF</h3><p>Spojenie viacerých PDF (aj fotiek) do jedného a zmenšenie veľkosti – bez nahrávania na server</p></span></a>
+        <a class="video" href="./videos/pdf.mp4" aria-label="Video: Spojiť a zmenšiť PDF">▶</a>
       </li>
-      <li class="card" data-project="kb">
-        <a href="./kb/"><h3>Obrázok na presné kB</h3><p>Zmenší fotku pod zadanú veľkosť v kB (napr. 100 kB pre formulár) – aj presne na bajt</p></a>
-        <a class="video" href="./videos/kb.mp4">▶ video</a>
-      </li>
-      <li class="card" data-project="pdf">
-        <a href="./pdf/"><h3>Spojiť a zmenšiť PDF</h3><p>Spojenie viacerých PDF (aj fotiek) do jedného a zmenšenie veľkosti – bez nahrávania na server</p></a>
-        <a class="video" href="./videos/pdf.mp4">▶ video</a>
-      </li>
-      <li class="card" data-project="webp">
-        <a href="./webp/"><h3>WebP na PNG / JPG</h3><p>Prevod obrázkov WebP (aj AVIF) na PNG alebo JPG – dávkovo, bez nahrávania na server</p></a>
-        <a class="video" href="./videos/webp.mp4">▶ video</a>
-      </li></ul></section>
+      <li class="card" data-project="webp" data-kind="nastroj">
+        <a class="main" href="./webp/"><img src="./covers/webp-256.png" srcset="./covers/webp-256.png 1x, ./covers/webp-512.png 2x" width="256" height="256" alt="" loading="lazy" decoding="async"><span class="txt"><span class="kind">Nástroj</span><h3>WebP na PNG / JPG</h3><p>Prevod obrázkov WebP (aj AVIF) na PNG alebo JPG – dávkovo, bez nahrávania na server</p></span></a>
+        <a class="video" href="./videos/webp.mp4" aria-label="Video: WebP na PNG / JPG">▶</a>
+      </li></ul>
+  </section>
   <footer>Počet projektov: 11 · <a href="./licencie/">Licencie a poďakovanie</a></footer>
 </main>
 </body>

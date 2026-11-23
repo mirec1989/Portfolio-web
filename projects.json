@@ -4,7 +4,9 @@
     "title": "Bloky 8×8",
     "description": "Neónové bloky, ktoré sa tríštia ako sklo. Mazaj viac čiar naraz, naťahuj COMBO a prekonaj rekord. Vidíš aj 3 ďalšie tvary.",
     "kind": "hra",
+    "audience": "genz",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -12,7 +14,9 @@
     "title": "Golf solitaire",
     "description": "9 kreslených jamiek: každá odložená karta posunie loptičku k jamke. Scorecard pod/nad par, birdie, eagle aj hole in one. Každé rozdanie sa dá vyhrať.",
     "kind": "hra",
+    "audience": "mid",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -20,7 +24,9 @@
     "title": "HEIC na JPG",
     "description": "Prevod fotiek z iPhonu (HEIC) na JPG alebo PNG – dávkovo, bez nahrávania na server",
     "kind": "nastroj",
+    "audience": "tool",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -28,7 +34,9 @@
     "title": "Obrázok na presné kB",
     "description": "Zmenší fotku pod zadanú veľkosť v kB (napr. 100 kB pre formulár) – aj presne na bajt",
     "kind": "nastroj",
+    "audience": "tool",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -36,7 +44,9 @@
     "title": "Klondike solitaire",
     "description": "Pasians s dennou výzvou (rovnaké rozdanie pre všetkých), odomykateľnými balíčkami kariet (mačky, staré mapy, vesmír) a ohňostrojom z kariet pri výhre.",
     "kind": "hra",
+    "audience": "mid",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -44,7 +54,9 @@
     "title": "Mahjong: Páry",
     "description": "Cesta okolo sveta: odoberajte páry kameňov a zbierajte kreslené pohľadnice zo 16 miest. Bez časovača, veľké kamene.",
     "kind": "hra",
+    "audience": "senior",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -52,7 +64,9 @@
     "title": "Pavúk solitaire",
     "description": "Pavúčí solitaire s obrími, konečne čitateľnými kartami. Tréning mozgu: séria dní, čas a zlepšenie. Bez časovača, 1, 2 alebo 4 farby.",
     "kind": "hra",
+    "audience": "senior",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -60,7 +74,9 @@
     "title": "Spojiť a zmenšiť PDF",
     "description": "Spojenie viacerých PDF (aj fotiek) do jedného a zmenšenie veľkosti – bez nahrávania na server",
     "kind": "nastroj",
+    "audience": "tool",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -68,7 +84,9 @@
     "title": "Šípky: Únik",
     "description": "Pip je zavretý medzi šípkami. Ťukaj na ne v správnom poradí a pomôž mu utiecť. 100 úrovní.",
     "kind": "hra",
+    "audience": "genz",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -76,7 +94,9 @@
     "title": "Skrutky a matice",
     "description": "Oprav rozbitého robota: trieď farebné matice na skrutky a za každú úroveň mu vráť jeden diel. 100 úrovní.",
     "kind": "hra",
+    "audience": "mid",
     "hidden": false,
+    "cover": true,
     "video": true
   },
   {
@@ -84,7 +104,9 @@
     "title": "WebP na PNG / JPG",
     "description": "Prevod obrázkov WebP (aj AVIF) na PNG alebo JPG – dávkovo, bez nahrávania na server",
     "kind": "nastroj",
+    "audience": "tool",
     "hidden": false,
+    "cover": true,
     "video": true
   }
 ]
